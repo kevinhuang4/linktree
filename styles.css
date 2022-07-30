@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #060042;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(2%,#060042),color-stop(108%,#20A39E));
+    background-image: linear-gradient(#060042 2%,#20A39E 108%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro {
+    display: flex;
+}
+
+.profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: auto;
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    font-family:  'Lobster', cursive;
+}
+
+.pronounciation {
+    color: #6a6a6a;
+    text-align: center;
+    font-family: 'Lobster';
+    margin-bottom: 10px;
+}
+
+.introduction {
+    color: white;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+
+a:hover, a.featured:hover {
+    background-color: #060042;
+    color: #ffffff;
+}
+
+a {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 15px auto;
+    padding: 15px 20px;
+    font-size: 0.85rem;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    text-align: center;
+}
+
+a.featured {
+    position: relative;
+    background-color: #ffffff;
+    color: #060042;
+    font-weight: bold;
+}
+
+a.featured:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;            
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #060042;
+}
+
+h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+}
+
+.channels {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.channels a {
+    flex: 1;
+    padding: 10px 10px;
+    margin-right: 10px;
+    background-color: #060042;
+    border: none;
+}
+
+.channles a:last-child {
+    margin-right: 0px;
+}
+
+.channles a:hover {
+    text-decoration: underline;
+}
